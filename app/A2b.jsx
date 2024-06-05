@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-// import A2BFlag2Flag from '@components/A2BFlag2Flag';
+import A2BFlag2Flag from '@/components/A2BFlag2Flag';
 import Featured from "@/components/Featured";
 import A2bBreadcrumb from "@/components/A2bBreadcrumbs";
 import A2bStyle from "@/components/A2bStyle";
@@ -17,7 +17,8 @@ const A2b = ({ langcodes, vord }) => {
   return (
     <>
       <Header />
-      {/* <A2BFlag2Flag /> */}
+      
+      <A2BFlag2Flag />
       <h1 className="text-2xl sm:text-4xl font-extrabold mx-6 text-center mb-2">
         Translate {langcodes[0]} {vordCapitalized} to {langcodes[1]} Free
       </h1>
@@ -46,9 +47,9 @@ const A2b = ({ langcodes, vord }) => {
         ></div>
 
         <div id="starsLabel" className="text-sm">
-          Rated <b>4.98/5</b> on
+          Rated <b>4.98/5</b> on&nbsp;
           <a href="https://theresanaiforthat.com/ai/videodubber/#rw">
-            There's An AI For That (TAAFT) - The #1 AI Aggregator
+             There's An AI For That (TAAFT) - The #1 AI Aggregator
           </a>
         </div>
       </div>

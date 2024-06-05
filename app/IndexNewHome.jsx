@@ -71,7 +71,6 @@ export default function IndexNewHome() {
     <div>
       
         <Announcement />
-        {/* <Announcements /> */}
         <Header/>
         <VideoSection />
         <h2 className="text-xl font-medium sm:text-2xl text-center px-4 sm:px-6 lg:px-8 py-4">
@@ -79,8 +78,8 @@ export default function IndexNewHome() {
           <span className="text-blue-900"><em> powered by</em></span> Generative AI
         </h2>
         <Featured />
-        {/* <FlagMarquee /> */}
-        {/* <Langs /> */}
+        <FlagMarquee />
+        <Langs />
         <section className="pt-3 mx-5">
           <div className="overflow-hidden">
             {/* include 'snippets/ytubers.html' */}
@@ -94,16 +93,16 @@ export default function IndexNewHome() {
         <Ft_Section3 />
         <PricingSection />
         <Testimonials />
-        {/* <ReviewsSnippet /> */}
+        <ReviewsSnippet />
         <div className="mx-auto max-w-screen-lg px-4 py-8 sm:px-6 lg:px-8 pt-12">
           <h2 className="text-center bg-gradient-to-r from-pink-800 via-indigo-500 to-red-600 bg-clip-text text-3xl sm:text-4xl font-extrabold text-transparent mb-8">
             Frequently Asked Questions
           </h2>
-          {/* <FAQSnippet /> */}
+          <FAQSnippet />
         </div>
         <Footer />
         {/* <ClarityTracking /> */}
-       
+        
     </div>
   );
 }

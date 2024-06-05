@@ -4,7 +4,7 @@ import DropdownButtons from './DropdownButtons';
 
 function Header() {
   const data={
-    "title": "VideoDubber",
+    "title": "VideoDubber. ",
     "logo":{
       "src": "https://cdn.jsdelivr.net/gh/souvic/autodubber/assets/autodubber-logo-1.svg",
       "alt": "videodubber-logo",

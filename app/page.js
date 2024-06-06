@@ -9,8 +9,9 @@ import A2b from "./A2b";
 export default function Home() {
   return (
     <div>
-      <A2b vord="audio" langcodes={["Spanish","English"]}/>
-      {/* <IndexNewHome /> */}
+      {/* <A2b/> */}
+      
+      <IndexNewHome />
     </div>
   );
 }

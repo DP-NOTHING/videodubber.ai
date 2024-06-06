@@ -1,18 +1,7 @@
-const Ft_Section3 = () => {
-  const data={
-    image:{
-      src:"https://cdn.jsdelivr.net/gh/souvic/autodubber@latest/assets/Organic-Youtube-Growth-1.webp",
-      alt:"How to grow your audience?"
-    },
-    title:"Get the VideoDubber Advantage",
-    description:"Let your content resonate worldwide as VideoDubber effortlessly translates and connects, fostering a global community through the universal language of captivating videos, at the cheapest price possible. Clone your voice, modify your content, all in a few clicks!",
-    button:{
-      text:"Get Started Free",
-      url:"/login",
-    }
-  }
+const Ft_Section3 = ({data}) => {
+  
   return (
-    <section>
+    <section className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">

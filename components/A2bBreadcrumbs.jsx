@@ -1,14 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const A2bBreadcrumb = ({ vord, langcodes }) => {
-  const data = {
-    button1: "Home",
-    button2: `Translate ${vord}`,
-    button3: `Translate ${langcodes[0]} ${
-      vord.charAt(0).toUpperCase() + vord.slice(1)
-    } ${langcodes[1] && `to ${langcodes[1]} `}`,
-  };
+const A2bBreadcrumb = ({ vord, langcodes,data }) => {
   return (
     <nav aria-label="Breadcrumb" className="mt-10 flex justify-center">
       <ol className="flex overflow-hidden rounded-lg border border-gray-200 text-gray-600">

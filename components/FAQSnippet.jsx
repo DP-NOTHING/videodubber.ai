@@ -3,28 +3,13 @@ import React from 'react';
 function FAQSnippet({ faqlist2, faqlist }) {
 
 
-  faqlist2 = [
-    {
-      q: " What are VideoDubber Credits?",
-      a: "To access the platform's services, we apply credit charges: 4 credits for one minute of voice over in video, 1 credit for one minute of translation, 1 credit for one minute of text-to-speech, and 1 credit for one minute of subtitling. In the subscription page, you are said that you will get x minutes of dubbing which actually translates to x*(4+1+1)=6x credits since one minute of dubbing means one minute of subtitling+one minute of translation+one minute of voicing over."
-    },
-    {
-      q: "What happens once my trial gets over?",
-      a: "You have the choice to access our product for free through our freemium plan, which comes with limitations on certain features and speakers. Alternatively, you can opt for a pro subscription to unlock and continue enjoying the full range of pro features."
-    },
-  ];
-  faqlist = [
-    {
-      q: "Is Google Translate 100% right?",
-      a: "Google Translate is fast but not always 100% accurate. For precise translations, platforms like Videodubber.ai offer more reliable results."
-    },
-    {
-      q: "Can I translate live audio?",
-      a: "Live audio translation is possible with certain tools like Videodubber.ai's live translation feature, providing real-time audio translations.",
-    }
-  ];
+  
 
   return (
+    <div className="mx-auto max-w-screen-lg px-4 py-8 sm:px-6 lg:px-8 pt-12">
+          <h2 className="text-center bg-gradient-to-r from-pink-800 via-indigo-500 to-red-600 bg-clip-text text-3xl sm:text-4xl font-extrabold text-transparent mb-8">
+            Frequently Asked Questions
+          </h2>
     <div className="space-y-4">
       {faqlist2.map((faq, index) => (
         <details key={index} className="group border-s-4 border-indigo-500 bg-gray-50 p-6">
@@ -80,6 +65,7 @@ function FAQSnippet({ faqlist2, faqlist }) {
           </p>
         </details>
       ))}
+    </div>
     </div>
   );
 }

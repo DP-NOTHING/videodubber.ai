@@ -17,10 +17,10 @@ function DropdownButtons() {
       {isOpen && (
         <div id="menu_1" className="select-none absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
           <div className="py-1" role="none">
-            <Link href="/"><a className="hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Home</a></Link>
-            <Link href="/pricing/"><a className="hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Pricing</a></Link>
-            <Link href="/blogs/"><a className="hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">Blogs</a></Link>
-            <Link href="/about/"><a className="hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-3">About</a></Link>
+            <Link href="/" className="hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-0">Home</Link>
+            <Link href="/pricing/" className="hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-1">Pricing</Link>
+            <Link href="/blogs/" className="hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-2">Blogs</Link>
+            <Link href="/about/" className="hover:bg-gray-100 text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabIndex="-1" id="menu-item-3">About</Link>
             <p onClick={() => window.location.href='/login'} className="hover:bg-gray-100 text-green-700 block px-4 py-2 text-sm border-t-2 border-gray-100" role="menuitem" tabIndex="-1" id="menu-item-4">Log In</p>
           </div>
         </div>

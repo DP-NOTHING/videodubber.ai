@@ -26,8 +26,7 @@ function ReviewsSnippet({ reviews }) {
 // Works like a charm. Now I am able to post the same content on YouTube but localised into different languages.
 // Bishakh Ghosh
 
-reviews = [ "Better than Elevenlabs..", "The best VideoDubbing app, much better than elevenlabs or any other alternative!", "Jessica Turner","", "Commendable Customer Service!", "Very nice product and superb customer service. 24K", "Steve, CEO@24K","", "Too Perfect!", "Videodubber.ai makes video dubbing sound so real – can't even tell it's done by a machine.", "KRAB OFFICIAL","", "Easy to Use and Light on Pocket!", "I've used many other video dubber but this one is very easy to use and light on pocket. Using it for a week, results are promising.", "Pranay Goswami", "Must have for content creators!!", "VideoDubber is a game-changer for content creators, effortlessly translating and dubbing videos to reach a global audience, making it a must-have tool for anyone looking to expand their reach.", "Nischay Parekh", "Smooth Localization..", "Works like a charm. Now I am able to post the same content on YouTube but localised into different languages.", "Bishakh Ghosh"
-];
+
 
   return (
     <div className="mt-10 font-monospace px-8">

@@ -1,36 +1,7 @@
 import React from 'react';
 
-const Testimonials = () => {
-  const data={
-    heading : "Don't just believe us.. Hear from the Moguls directly!",
-    testimonials: [
-      {
-        name: "Griffin Johnsen",
-        country: "United States",
-        image: "https://cdn.jsdelivr.net/gh/souvic/autodubber/assets/griffin.jpeg",
-        designation: "Founder, Armchair Historian LLC",
-        rating: 5,
-        countyimage: "https://flagcdn.com/h20/us.png",
-        review: "VideoDubber helped us make historical content more accessible. The platform, the UI was so smooth to use. Multi-person support is not something many platforms provide which we got here."
-      },
-      {
-        name: "Becky Evans",
-        country: "Great Britain",
-        image: "https://cdn.jsdelivr.net/gh/souvic/autodubber/assets/becky.jpeg",
-        designation: "Youtuber, Multipreneur",
-        rating: 5,
-        review: "Being an Youtuber, VideoDubber was a natural choice for me. No Youtuber should be miserly investing in their growth story and I did not. Being able to make my English videos accessible to billions is a timed opportunity which few can afford to miss!"
-      },
-      {
-        name: "Bishakh Ghosh",
-        country: "India",
-        image: "https://cdn.jsdelivr.net/gh/souvic/autodubber/assets/bishakh.webp",
-        designation: "CEO, EasyAuth.io",
-        rating: 5,
-        review: "We used VideoDubber to translate multiple videos across languages, mainly to advertise our services around the globe. I am so glad to witness the tool work smoothly for all our needs catapulting our Q-o-Q growth!"
-      }
-    ]
-  }
+const Testimonials = ({data}) => {
+  
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">

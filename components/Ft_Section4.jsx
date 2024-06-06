@@ -1,27 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-export default function Ft_section4() {
-  const data={
-    "title":"Use your Original Voice!",
-    "description":"VideoDubber.ai is the first and only AI to offer Voice Cloning! Use VideoDubber.ai to clone your voice in seconds with a single click!",
-    "image":"https://cdn.jsdelivr.net/gh/souvic/autodubber@latest/assets/ai-voice-cloning-free.webp",
-    "alt":"AI Voice Cloning Free",
-    "points_heading":"Why is Voice Cloning essential for content creators?",
-    "points":[
-      "Authenticity: The creator's natural voice adds a genuine touch to the content, enhancing credibility",
-      "Unique Identity: The creator's voice is distinctive making their content instantly recognizable.",
-      "Emotional Expression: The creator's voice carries their emotions and intentions which are important for audience.",
-      "Personal Branding: The creator's voice becomes an integral part of their personal brand, reinforcing their image and message.",
-      "Trust and Engagement: Hearing the creator's actual voice fosters trust and deeper engagement as viewers feel a personal connection to the content."
-    ],
-    "button":{
-      "text":"Dub in Your Own Voice",
-      "link":"/login"
-    }
-  }
+export default function Ft_section4({data}) {
+  
   return (
-    <section>
+    <section className='mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">

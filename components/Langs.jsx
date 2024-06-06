@@ -1,8 +1,7 @@
 import React from 'react';
 
 export default function Langs({ langs }) {
-  const data="Tamil (India),Malayalam (India),Italian (Italy),Vietnamese (Vietnam),Dutch (Netherlands),Gujarati (India),German (Germany),Japanese (Japan),Portuguese (Portugal),English (India),English (Australia),Chinese (Hong Kong),Bengali (India),Afrikaans (South Africa),Hindi (India),French (Canada),Indonesian (Indonesia),Spanish (Spain),Arabic,Marathi (India),French (France),Russian (Russia),Turkish (Turkey),Mandarin Chinese,Dutch (Belgium),English (UK),Kannada (India),Portuguese (Brazil),Polish (Poland),Korean (South Korea),Thai (Thailand),Punjabi (India),Spanish (US),English (US)".split(",");
-  langs=data;
+  
   return (
     <>
       <h2 className="text-xl font-medium sm:text-2xl text-center px-4 sm:px-6 lg:px-8 py-4">

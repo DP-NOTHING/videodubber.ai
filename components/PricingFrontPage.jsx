@@ -1,11 +1,8 @@
 import React from 'react';
 import PricingTable from './PricingTable';
 
-export default function PricingSection() {
-  const data={
-    heading:"3x Cheaper for quick-testing new tech!",
-    subHeading:"Get the VideoDubber Advantage before your competitors!",
-  }
+export default function PricingSection({data}) {
+  
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <div className="mx-auto max-w-3xl text-center pb-4">

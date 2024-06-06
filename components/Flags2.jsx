@@ -1,8 +1,7 @@
 import React from 'react';
 
 export default function FlagMarquee({ flags, flagalts }) {
-  flags=['in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us','in','au','us'];
-  flagalts=['India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States','India','Australia','United States'];
+  
   return (
     <div className="relative flex overflow-x-hidden mx-4 mt-4 bg-gray-50 py-8">
       <div className="whitespace-nowrap animate-marquee">

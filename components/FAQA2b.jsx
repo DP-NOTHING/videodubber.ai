@@ -1,7 +1,11 @@
 import React from "react";
 
-const FAQA2b = ({ faqlist }) => {
+const FAQA2b = ({ faqlist ,data}) => {
   return (
+    <div className="mx-auto max-w-screen-lg px-4 py-8 sm:px-6 lg:px-8 pt-12">
+        <h2 className="text-lg sm:text-2xl text-center bg-gradient-to-r from-pink-800 via-indigo-500 to-red-600 bg-clip-text font-extrabold text-transparent mb-8">
+          {data.heading}
+        </h2>
     <div className="space-y-4">
       {faqlist.map((i) => (
         <details className="group border-s-4 border-indigo-500 bg-gray-50 p-6">
@@ -31,6 +35,7 @@ const FAQA2b = ({ faqlist }) => {
           </p>
         </details>
       ))}
+    </div>
     </div>
   );
 };

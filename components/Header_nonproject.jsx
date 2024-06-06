@@ -2,44 +2,7 @@
 import Link from 'next/link';
 import DropdownButtons from './DropdownButtons';
 
-function Header() {
-  const data={
-    "title": "VideoDubber. ",
-    "logo":{
-      "src": "https://cdn.jsdelivr.net/gh/souvic/autodubber/assets/autodubber-logo-1.svg",
-      "alt": "videodubber-logo",
-    },
-    "links": [
-      {
-        "title": "Home",
-        "url": "/"
-      },
-      {
-        "title": "Pricing",
-        "url": "/pricing/"
-      },
-      {
-        "title": "Blogs",
-        "url": "/blogs/"
-      },
-      {
-        "title": "About",
-        "url": "/about/"
-      }
-    ],
-    "buttons": [
-      {
-        "title": "Try Free",
-        "url": "/login",
-        "type": "button"
-      },
-      {
-        "title": "Log In",
-        "url": "/login",
-        "type": "button"
-      }
-    ]
-  }
+function Header({data}) {
   return (
     <header id="header_" className="sticky top-0 z-50 bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 sm:py-8 lg:px-8">
@@ -62,17 +25,27 @@ function Header() {
             ))}
             
 
-            <button className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring" type="button" onClick={() => window.location.href=data.buttons[0].url}><span className="text-sm font-medium"> {data.buttons[0].title} </span></button>
+            <button className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-gray-200 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring" type="button" onClick={() => window.location.href=data.buttons[0].url}><span className="text-sm font-medium">    {data.buttons[0].title} </span>
+            <svg
+              xmlns="https://www.w3.org/2000/svg"
+              class="h-4 w-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg></button>
             <button className="block rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring" type="button" onClick={() => window.location.href=data.buttons[1].url}>{data.buttons[1].title}</button>
           </div>
           <DropdownButtons />
         </div>
       </div>
-      <style jsx>{`
-        button{
-          -webkit-tap-highlight-color: transparent;
-        }
-      `}</style>
+      
     </header>
   );
 }

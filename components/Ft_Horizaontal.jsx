@@ -71,30 +71,10 @@
     </div>
   </div> */}
 
-const Ft_Horizaontal = () => {
-  const data={
-    card : [
-      {
-        heading : "Sub like a Pro",
-        text : "Get your auto-generated video subtitles for any language, edit on the go with your own dictionary and download with VideoDubber! Proven way to 2x your video reach!",
-        url : "/translate-spanish-video-to-english/",
-        label : "Learn how",
-      },
-      {
-        heading : "Dub like a Pro",
-        text : "Get advantage over your competitors making your video speak languages your subscribers understand but you don't, with VideoDubber! Proven way to 10x your subscriber count!",
-        url : "/translate-spanish-video-to-english/",
-        label : "Learn how"
-      },
-      {
-        heading : "Translate like a Pro",
-        text : "Get rid of language barriers, translating your video to reach people from other countries and multiply your revenue with VideoDubber! Proven way to 3x your revenue count!",
-        url : "/translate-spanish-video-to-english/",
-        label : "Learn how"
-      }
-    ]
-  }
+const Ft_Horizaontal = ({data}) => {
   return (
+    <section className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div className="container mx-auto">
     <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
       <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
         <div className="relative p-5 bg-white rounded-sm">
@@ -155,6 +135,8 @@ const Ft_Horizaontal = () => {
         </div>
       </div>
     </div>
+    </div>
+    </section>
   );
 };
 

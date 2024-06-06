@@ -1,24 +1,7 @@
 import React from 'react';
 
-export default function Ft_Counter() {
-  const data={
-    title : "Trusted by Growth Hackers",
-    text : "We will make your video available in languages 99.86% of the globe understands!",
-    counter : [
-      {
-        title : "Total Videos made",
-        count : "10k+"
-      },
-      {
-        title : "Number of Voices",
-        count : "100+"
-      },
-      {
-        title : "Native Language Coverage",
-        count : "99.86%"
-      }
-    ]
-  }
+export default function Ft_Counter({data}) {
+
   return (
     <section className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">

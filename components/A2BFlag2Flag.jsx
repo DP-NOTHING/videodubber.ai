@@ -1,16 +1,15 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
-const A2BFlag2Flag = ({ langcodes }) => {
-    const flags = ["es","us","fr","in","jp"];
-  langcodes=["es","us"];
-//   flagdict={
-//     "spanish":"es",
-//     "english":"us",
-//     "french":"fr",
-//     "hindi":"in",
-//     "japanese":"jp"
-//   }
+const A2BFlag2Flag = ({ langcodes,flags }) => {
+  const flagdict = {
+    "spanish": "es",
+    "english": "us",
+    "french": "fr",
+    "hindi": "in",
+    "japanese": "jp",
+    "dutch": "nl",
+  };
   return (
     <div className="flex mx-auto justify-center mb-4">
       <div className="my-auto">
@@ -30,7 +29,7 @@ const A2BFlag2Flag = ({ langcodes }) => {
             maxWidth: '100%',
           }}
         >
-          {flags.includes(langcodes[0].toLowerCase()) ? (
+          {flags.includes(flagdict[langcodes[0].toLowerCase()]) ? (
             <>
               <span
                 style={{
@@ -68,7 +67,7 @@ const A2BFlag2Flag = ({ langcodes }) => {
                <Image
                 alt={`Image of ${langcodes[0]} Flag`}
                 // src={`/static/svgs/${langcodes[0].toLowerCase()}.svg`}
-                src={`https://flagcdn.com/h120/${langcodes[0]}.png`}
+                src={`https://flagcdn.com/h120/${flagdict[langcodes[0].toLowerCase()]}.png`}
                 decoding="async"
                 data-nimg="intrinsic"
                 className="h-full w-full rounded-md object-cover"
@@ -192,7 +191,7 @@ const A2BFlag2Flag = ({ langcodes }) => {
             maxWidth: '100%',
           }}
         >
-          {flags.includes(langcodes[1].toLowerCase()) ? (
+          {flags.includes(flagdict[langcodes[1].toLowerCase()]) ? (
             <>
               <span
                 style={{
@@ -228,7 +227,7 @@ const A2BFlag2Flag = ({ langcodes }) => {
               <Image
                 alt={`Image of ${langcodes[1]} Flag`}
                 // src={`/static/svgs/${langcodes[1].toLowerCase()}.svg`}
-                src={`https://flagcdn.com/h120/${langcodes[1]}.png`}
+                src={`https://flagcdn.com/h120/${flagdict[langcodes[1].toLowerCase()]}.png`}
                 decoding="async"
                 data-nimg="intrinsic"
                 className="h-full w-full rounded-md object-cover"

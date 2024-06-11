@@ -12,9 +12,9 @@ function Header({data}) {
               <Link href="/" className="cursor-pointer">
                   {data.title}
                   <picture>
-                    <source media="(max-width: 639px)" srcSet={data.logo.src} alt={data.logo.alt} width="42" height="24"/>
-                    <source media="(min-width: 640px)" srcSet={data.logo.src} alt={data.logo.alt} width="62" height="36"/>
-                    <img className="inline-flex h-8 sm:h-16" src={data.logo.src} alt={data.logo.alt}/>
+                    <source media="(max-width: 639px)" srcSet={data.logo.src} alt={data.logo.alt} />
+                    <source media="(min-width: 640px)" srcSet={data.logo.src} alt={data.logo.alt} />
+                    <img className="inline-flex h-8 sm:h-16" src={data.logo.src} alt={data.logo.alt} width="62" style={{maxHeight:"32px"}} />
                   </picture>
               </Link>
             </div>
